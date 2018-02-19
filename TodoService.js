@@ -2,16 +2,14 @@
   function TodoService(){
     var todoList=["apple","oranges"];
     return {
-      //one method to get words and another to set words
-      getData:getData,//function
-      setData:setData//function
+      getData:getData,
+      setData:setData
     }
     function getData(){
       return todoList;
     }
     function setData(data){
       todoList.push(data);
-      console.log(todoList);
     }
   }
   angular
